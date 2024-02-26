@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/blog">Blog</Link></li>
-        <li><Link to="/bucketlist">Bucketlist Achievement</Link></li>
+        <li><Link to="/bucketlist">Bucket-list</Link></li>
       </ul>
     </nav>
   </header>
