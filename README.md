@@ -1,4 +1,5 @@
-# [Troyza Personal website]
+# [Troyza Website](https://troyza.netlify.app/)
+
 ## Overview
 Repo hosting my personal website.
 
