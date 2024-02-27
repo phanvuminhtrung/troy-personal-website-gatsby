@@ -1,3 +1,8 @@
+//Calling dotnev module to configure the .env file
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -15,6 +20,14 @@ module.exports = {
     siteUrl: `https://github.com/phanvuminhtrung/troy-personal-website-gatsby`,
   },
   plugins: [
+    //Adding plugin to read from contenful database
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
