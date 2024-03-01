@@ -8,15 +8,17 @@ const SecondPage = () => (
   <div className="about-page">
     <Layout>
       <Seo title="About" />
-      <h1>Welcome to My Personal Page!</h1>
-      <p>This is a little about me and my work.</p>
+      <h1>Just a bit about me only</h1>
+      <p>This  is a little about me and my work.</p>
 
       {/* About Section */}
       <section id="about">
         <h2>About Me</h2>
-        <h4>Welcome to my website, I'm Troy, but you can call me Troyza!</h4>
-        <p>I am a Junior Dynamics 365 Developer at EngageRM in Melbourne, Australia, passionate about the Dynamics 365 ecosystem and Power Platform. My current focus is on expanding my technical expertise in C#, Web API, and Web App development.</p>
+        <h4>I'm Troy, but you can call me Troyza!</h4>
+        <p>I am a Junior Dynamics 365 Developer in Melbourne, Australia, passionate about the Dynamics 365 ecosystem and Power Platform. My current focus is on expanding my technical expertise in C#, Web API, and Web App development.</p>
         <p>I'm dedicated to leveraging Dynamics 365 and the Power Platform to create innovative CRM solutions that drive business impact. Eager to grow and contribute to team success, I'm open to connecting with professionals who share a similar passion for these technologies.</p>
+        <p>P/S: JK, I playaround with alot of diffrent tech stack to not only discover more fun-to-do stuff but also on my way to build something with my own identity</p>
+        <p>P/S-2: I admire and value people who actually build tools and contribute to community. One of my favourite inventor is Mark Carrington</p>
       </section>
 
       {/* Contact Section */}

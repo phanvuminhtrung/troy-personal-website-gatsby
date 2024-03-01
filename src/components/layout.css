@@ -1,3 +1,118 @@
+/* ---------------------------------------- GLOBAL-CUSTOM-CSS -------------------------------------------*/
+/* Navigation */
+.nav-button:hover {
+  color: green !important; 
+}
+
+/* Home Page css */
+.home-page {
+  background:#f4f4f4;
+  color: #000000;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/* About Page css */
+.about-page {
+  background:#f4f4f4;
+  color: #000000;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/* About Page css */
+.bucket-list {
+  background:#f4f4f4;
+  color: #000000;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/* Blog Page css */
+.blog-page {
+  background:#f4f4f4;
+  color: #000000;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/* Blog Post css */
+.blog-post {
+  background:#f4f4f4;
+  color: #000000;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 25px;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+/* ------------------------------------------ Layout css -------------------------------------- */
+/* layout.css */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  background: url('../images/forestbackground.jpg') no-repeat center center fixed;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: grey; /* or any color that matches your design */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* optional for better visibility */
+}
+
+main {
+  flex: 1; /* This will push the footer down */
+  padding: var(--size-gutter); /* Adjust padding as needed */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background: white; /* or any color that matches your design */
+}
+
+
+/* ------------------------------------------ Gatsby template layout css -------------------------------------- */
 :root {
   --border-radius: 4px;
   --color-text: #333;
@@ -223,83 +338,3 @@ pre tt:after {
   content: none;
 }
 
-/* CUSTOM-CSS - applying for all page */
-
-/* Background */
-html {
-  background: url('../images/forestbackground.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* Home Page css */
-.home-page {
-  background:#f4f4f4;
-  color: #000000;
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 25px;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 0 1rem 0;
-}
-
-/* About Page css */
-.about-page {
-  background:#f4f4f4;
-  color: #000000;
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 25px;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 0 1rem 0;
-}
-
-/* About Page css */
-.bucket-list {
-  background:#f4f4f4;
-  color: #000000;
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 25px;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 0 1rem 0;
-}
-
-/* Blog Page css */
-.blog-page {
-  background:#f4f4f4;
-  color: #000000;
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 25px;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 0 1rem 0;
-}
-
-/* Blog Post css */
-.blog-post {
-  background:#f4f4f4;
-  color: #000000;
-  display:flex;
-  flex-direction: row;
-  text-decoration: none;
-  border-radius: 25px;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem 0 1rem 0;
-}
