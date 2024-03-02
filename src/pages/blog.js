@@ -2,7 +2,6 @@ import React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 // Query for blog posts
 export const query = graphql`
@@ -27,8 +26,8 @@ const BlogPage = () => {
   const data = useStaticQuery(query); // useStaticQuery hook to execute the GraphQL query
 
   return (
-    <div className="blog-page">
     <Layout>
+      <div className="blog-page">
       <Seo title="Blog" />
         {/* Map through each blog post and display a link with the title and publish date */}
         {data.allContentfulBlogPost.edges.map(({ node }) => (
@@ -40,8 +39,8 @@ const BlogPage = () => {
             <p>{node.publishedDate}</p>
           </div>
         ))}
+      </div>
     </Layout>
-    </div>
   );
 };
 

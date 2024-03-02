@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BucketListPage = () => (
-  <div className="bucket-list">
     <Layout>
+        <div className="bucket-list">
       <Seo title="BucketList" />
         <div>
           <h1>My Bucket List</h1>
@@ -17,8 +17,8 @@ const BucketListPage = () => (
           </ul>
         </div>
       <Link to="/">Go back to the homepage</Link>
+      </div>
     </Layout>
-  </div>
 )
 
 export const Head = () => <Seo title="BucketList" />

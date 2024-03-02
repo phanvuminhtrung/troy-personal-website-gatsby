@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
- */
-
+// This is the layout component that wraps around all pages. It includes the header and footer components, and the main content of the page.
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,9 +19,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main>{children}</main>
-      <Footer/>
+      <div className="d-flex flex-column min-vh-100">
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <main className="flex-grow-1">{children}</main>
+        <Footer className="mt-auto"/>
+      </div>
     </>
   )
 }
