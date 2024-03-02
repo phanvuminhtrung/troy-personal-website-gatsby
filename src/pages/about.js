@@ -13,7 +13,7 @@ const AboutPage = () => (
       <Seo title="About" />
       <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
         <div className="about-page text-white">
-          <h2>just a bit about me only</h2>
+          <h2>Just a bit about me only</h2>
           <StaticImage src="../images/troyimage.jpg" alt="am at a hackathon" className="custom-image"/>
           {/* About Section */}
           <section id="about" className="mt-2 mb-2">
@@ -36,7 +36,7 @@ const AboutPage = () => (
           </section>
 
           {/* Next-page Linkl */}
-          <div className="text-end w-100">
+          <div className="text-end w-100 mt-3">
             <Link to="/blog" className="btn btn-outline-warning">get-to-know-my-tech</Link>
           </div>
         </div>

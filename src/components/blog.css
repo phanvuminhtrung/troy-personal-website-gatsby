@@ -1,0 +1,30 @@
+/* Blog Page css */
+.blog-page {
+    margin-top: 1.618%;
+    margin-bottom: 1.618%;
+    margin-left: auto;
+    margin-right: auto;
+    background:#333;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 1.618%;
+    max-width: 900px;
+    padding: 2rem;
+  }
+.blog-page h2 {
+    color: #FCDC2A;
+}
+
+.blog-page a:hover {
+  color: #436850; 
+}
+
+.blog-page a {
+  color: #FCDC2A; 
+}
+
+.name-custom {
+  color: #FCDC2A; 
+}

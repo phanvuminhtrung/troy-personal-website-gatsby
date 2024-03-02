@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Layout from "../components/layout";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { INLINES, BLOCKS } from '@contentful/rich-text-types';
+import "../components/blog-post.css"
 
 // Query for blog post by slug
 export const query = graphql`
@@ -40,13 +41,13 @@ const BlogPost = ({ data }) => {
   const renderedContent = documentToReactComponents(JSON.parse(contentfulBlogPost.content.raw), options);
 
   return (
-    <div className='blog-post'>
     <Layout>
-      <h1>{contentfulBlogPost.title}</h1>
-      <h3>{contentfulBlogPost.publishedDate}</h3>
-      <div>{renderedContent}</div>
+      <div className='blog-post'>
+        <h2>{contentfulBlogPost.title}</h2>
+        <a>{contentfulBlogPost.publishedDate}</a>
+        <div className='mt-5 mb-5'>{renderedContent}</div>
+      </div>
     </Layout>
-    </div>
   );
 };
 

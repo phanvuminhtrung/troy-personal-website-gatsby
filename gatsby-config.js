@@ -14,10 +14,10 @@ require('dotenv').config({
  */
 module.exports = {
   siteMetadata: {
-    title: `Troyza Website`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `troyza`,
-    siteUrl: `https://github.com/phanvuminhtrung/troy-personal-website-gatsby`,
+    title: `Troy Phan`,
+    description: `Welcome to my personal website. I write about tech and my life.`,
+    author: `Troyza`,
+    siteUrl: `https://troyphan.com/`,
   },
   plugins: [
     //Adding plugin to read from contenful database
