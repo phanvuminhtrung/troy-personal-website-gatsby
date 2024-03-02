@@ -3,32 +3,35 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image";
 import "../components/about.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AboutPage = () => (
   <Layout>
+
       <Seo title="About" />
       <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
         <div className="about-page text-white">
           <h2>just a bit about me only</h2>
-
+          <StaticImage src="../images/troyimage.jpg" alt="am at a hackathon" className="custom-image"/>
           {/* About Section */}
-          <section id="about">
-          <h4>about-me:</h4>
-            <h6>- I'm Troy, but you can call me Troyza!</h6>
-            <p>I am a Dynamics-365 Developer/Web Developer in Melbourne, Australia, passionate about web technologies</p>
+          <section id="about" className="mt-2 mb-2">
+            <h4 className="text-decoration-underline">about-me:</h4>
+            <p>I'm <span className="name-custom">Troy</span>, but you can call me <span className="name-custom">Troyza</span>!</p>
+            <p>I am a Junior Dynamics-365 Developer/Web Developer in Melbourne, Australia, passionate about web technologies.</p>
             <p>I'm dedicated to leveraging Dynamics 365 and the Power Platform to create innovative CRM solutions that drive business impact. Eager to grow and contribute to team success, I'm open to connecting with professionals who share a similar passion for these technologies.</p>
-            <p>I admire and value people who actually build tools and contribute to community. One of my favourite inventor is Mark Carrington</p>
+            <p>I admire and value people who actually build tools and contribute to community.</p>
           </section>
 
            {/* Contact Section */}
-          <section id="contact">
-            <h4>Contact</h4>
+          <section id="contact" className="mt-2 mb-2">
+            <h4 className="text-decoration-underline">contact-me:</h4>
             <p>If you're interested in working together or just want to say hi, here's how you can reach out to me:</p>
             <ul>
-              <li>Email: <a href="mailto:troyphan98@gmail.com">troyphan98@gmail.com</a></li>
-              <li>GitHub: <a href="https://github.com/phanvuminhtrung" target="_blank" rel="noopener noreferrer">phanvuminhtrung</a></li>
-              <li>LinkedIn: <a href="https://www.linkedin.com/in/vuphanit/" target="_blank" rel="noopener noreferrer">Vu (Troy) Phan</a></li>
+              <li>Email: <a href="mailto:troyphan98@gmail.com" className="custom-a">troyphan98@gmail.com</a></li>
+              <li>GitHub: <a href="https://github.com/phanvuminhtrung" target="_blank" rel="noopener noreferrer" className="custom-a">phanvuminhtrung</a></li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/vuphanit/" target="_blank" rel="noopener noreferrer" className="custom-a">Vu (Troy) Phan</a></li>
             </ul>
           </section>
 

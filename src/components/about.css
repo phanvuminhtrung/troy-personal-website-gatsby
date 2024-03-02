@@ -1,6 +1,7 @@
 /* About Page css */
 .about-page {
-    margin-top: 2%;
+    margin-top: 1.618%;
+    margin-bottom: 1.618%;
     margin-left: auto;
     margin-right: auto;
     background:#333;
@@ -8,10 +9,35 @@
     display:flex;
     flex-direction: column;
     text-decoration: none;
-    border-radius: 1%;
+    border-radius: 1.618%;
     max-width: 900px;
     padding: 2rem;
   }
 .about-page h2 {
     color: #FCDC2A;
+}
+
+.about-page a:hover {
+  color: #436850; /* Replace with the color you want on hover */
+}
+
+.custom-a {
+  color: #FCDC2A; /* Replace with the color you want on hover */
+}
+
+.custom-image {
+  margin-top: 1.618%;
+  margin-bottom: 1.618%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 1.618%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-custom {
+  color: #FCDC2A; /* Replace with the color you want on hover */
 }
