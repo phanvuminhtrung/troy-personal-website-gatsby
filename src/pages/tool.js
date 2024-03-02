@@ -3,9 +3,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/tool.css"
+import { Fade } from 'react-awesome-reveal';
 
 const ToolPage = () => (
   <Layout>
+    <Fade>
     <Seo title="BucketList" />
     <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
       <div className="tool-page">
@@ -24,6 +26,7 @@ const ToolPage = () => (
           </div>
       </div>
     </div>
+    </Fade>
   </Layout>
 )
 

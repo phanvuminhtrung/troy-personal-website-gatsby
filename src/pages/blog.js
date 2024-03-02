@@ -3,6 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/blog.css"
+import { Fade } from 'react-awesome-reveal';
 
 // Query for blog posts
 export const query = graphql`
@@ -28,11 +29,12 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Fade>
       <Seo title="Blog" />
       <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
         <div className="blog-page">
           <h2>Blog</h2>
-          
+
           {/* Map through each blog post and display a link with the title and publish date */}
           {data.allContentfulBlogPost.edges.map(({ node }) => (
             <div key={node.slug}>
@@ -49,6 +51,7 @@ const BlogPage = () => {
           </div>
         </div>
       </div>
+      </Fade>
     </Layout>
   );
 };

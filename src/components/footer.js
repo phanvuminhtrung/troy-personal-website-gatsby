@@ -9,8 +9,9 @@ const Footer = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      built by Troy Phan based on Gatsby
-    </a>
+      Copywrite @ 2024 TroyPhan. Built by Gastby
+    </a> 
+
   </footer>
 );
 
