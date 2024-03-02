@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 // import boostrap + react-bootstrap
 import { Navbar, Nav, Container } from 'react-bootstrap'
@@ -15,11 +16,20 @@ const Header = () => (
             <Nav.Link as={Link} to="/" className="nav-button text-white me-4" activeClassName="active">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-button text-white me-4" activeClassName="active">ABOUT</Nav.Link>
             <Nav.Link as={Link} to="/blog" className="nav-button text-white me-4" activeClassName="active">BLOG</Nav.Link>
-            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-4" activeClassName="active">TOOLS</Nav.Link>
+            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">TOOLS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Nav>
-            {/* Social icons would go here */}
+          <Nav.Link className="custom-divider me-2 text-center">|</Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/in/vuphanit/" target="_blank" className="text-white me-1">
+            <FaLinkedin />
+          </Nav.Link>
+          <Nav.Link href="https://github.com/phanvuminhtrung" target="_blank" className="text-white me-1">
+            <FaGithub />
+          </Nav.Link>
+          <Nav.Link href="mailto:troyphan98@gmail.com" className="text-white me-1">
+            <FaEnvelope />
+          </Nav.Link>
         </Nav>
       </Container>
     </Navbar>

@@ -1,6 +1,4 @@
 /* ---------------------------------------- GLOBAL-CUSTOM-CSS -------------------------------------------*/
-
-
 /* ------------------------------------------ Main layout -------------------------------------- */
 html {
   height: 100%;
@@ -58,6 +56,9 @@ footer {
   color: #436850 !important; 
 }
 .nav-button.active {
+  color: #FCDC2A !important; 
+}
+.custom-divider{
   color: #FCDC2A !important; 
 }
 
