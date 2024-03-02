@@ -28,10 +28,11 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Seo title="Blog" />
       <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
         <div className="blog-page">
-        <Seo title="Blog" />
           <h2>Blog</h2>
+          
           {/* Map through each blog post and display a link with the title and publish date */}
           {data.allContentfulBlogPost.edges.map(({ node }) => (
             <div key={node.slug}>
@@ -41,6 +42,8 @@ const BlogPage = () => {
               <span> - {node.publishedDate}</span>
             </div>
           ))}
+
+          {/* Next-page Link */}
           <div className="text-end w-100 mt-5">
             <Link to="/tool" className="btn btn-outline-warning">get-to-know-my-tool</Link>
           </div>

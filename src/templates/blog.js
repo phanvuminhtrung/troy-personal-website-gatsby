@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby"
 import { graphql } from 'gatsby';
 import Layout from "../components/layout";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -42,10 +43,17 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
-      <div className='blog-post'>
-        <h2>{contentfulBlogPost.title}</h2>
-        <a>{contentfulBlogPost.publishedDate}</a>
-        <div className='mt-5 mb-5'>{renderedContent}</div>
+      <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
+        <div className='blog-post'>
+          <h2>{contentfulBlogPost.title}</h2>
+          <a>{contentfulBlogPost.publishedDate}</a>
+          <div className='mt-5 mb-5'>{renderedContent}</div>
+          
+          {/* Next-page Link */}
+          <div className="mt-5 text-end w-100">
+            <Link to="/" className="btn btn-outline-warning">back-to-blogs</Link>
+          </div>
+        </div>
       </div>
     </Layout>
   );

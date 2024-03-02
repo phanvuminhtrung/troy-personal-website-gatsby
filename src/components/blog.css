@@ -10,6 +10,7 @@
     flex-direction: column;
     text-decoration: none;
     border-radius: 1.618%;
+    min-width: 50%;
     max-width: 900px;
     padding: 2rem;
   }
