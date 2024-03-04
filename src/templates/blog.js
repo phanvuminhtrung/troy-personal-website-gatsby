@@ -53,7 +53,7 @@ const BlogPost = ({ data }) => {
 
           {/* Next-page Link */}
           <div className="mt-5 text-end w-100">
-            <Link to="/blog" className="btn btn-outline-warning">back-to-blogs</Link>
+            <Link to="/blog" className="btn btn-outline-warning m-1">back-to-blogs</Link>
           </div>
         </div>
       </div>

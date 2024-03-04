@@ -1,19 +1,19 @@
 /* About Page css */
 .about-page {
-    margin-top: 1.618%;
-    margin-bottom: 1.618%;
-    margin-left: auto;
-    margin-right: auto;
-    background:#333;
-    color: white;
-    display:flex;
-    flex-direction: column;
-    text-decoration: none;
-    border-radius: 1.618%;
-    min-width: 50%;
-    max-width: 900px;
-    padding: 2rem;
-  }
+  margin-top: 1.618%;
+  margin-bottom: 1.618%;
+  margin-left: auto;
+  margin-right: auto;
+  background:#333;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 1.618%;
+  min-width: 50%;
+  max-width: 900px;
+  padding: 2rem;
+}
 .about-page h2 {
     color: #FCDC2A;
 }

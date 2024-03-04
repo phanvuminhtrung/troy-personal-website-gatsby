@@ -38,8 +38,8 @@ const AboutPage = () => (
 
           {/* Next-page Link */}
           <div className="text-end w-100 mt-3">
-            <Link to="/about" className="btn btn-outline-warning me-2">download-my-resume</Link>
-            <Link to="/blog" className="btn btn-outline-warning">get-to-know-my-tech</Link>
+            <Link to="/about" className="btn btn-outline-warning m-1">download-my-resume</Link>
+            <Link to="/blog" className="btn btn-outline-warning m-1">get-to-know-my-tech</Link>
           </div>
         </div>
       </div>

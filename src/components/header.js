@@ -8,26 +8,31 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Header = () => (
   <header className="sticky-top bg-dark">
-    <Navbar>
-      <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav >
+    <Navbar collapseOnSelect expand="lg" variant="dark">
+      <Container fluid className="px-3">
+        {/* Hamberger nav */}
+        <div className="me-2">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        </div>
+        {/* Default nav */}
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-start">
+          <Nav>
             <Nav.Link as={Link} to="/" className="nav-button text-white me-4" activeClassName="active">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-button text-white me-4" activeClassName="active">ABOUT</Nav.Link>
             <Nav.Link as={Link} to="/blog" className="nav-button text-white me-4" activeClassName="active">BLOG</Nav.Link>
             <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">TOOLS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav>
+        {/* Social media nav links */}
+        <Nav className="flex-row">
           <Nav.Link className="custom-divider me-2 text-center">|</Nav.Link>
-          <Nav.Link href="https://www.linkedin.com/in/vuphanit/" target="_blank" className="text-white me-1">
+          <Nav.Link href="https://www.linkedin.com/in/vuphanit/" target="_blank" className="text-white me-2">
             <FaLinkedin />
           </Nav.Link>
-          <Nav.Link href="https://github.com/phanvuminhtrung" target="_blank" className="text-white me-1">
+          <Nav.Link href="https://github.com/phanvuminhtrung" target="_blank" className="text-white me-2">
             <FaGithub />
           </Nav.Link>
-          <Nav.Link href="mailto:troyphan98@gmail.com" className="text-white me-1">
+          <Nav.Link href="mailto:troyphan98@gmail.com" className="text-white me-2">
             <FaEnvelope />
           </Nav.Link>
         </Nav>

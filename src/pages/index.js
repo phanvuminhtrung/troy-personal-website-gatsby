@@ -27,7 +27,7 @@ const IndexPage = () => (
           </Bounce>
           {/* Next-page Link */}
           <div className="mt-5 text-end w-100">
-            <Link to="/about" className="btn btn-outline-warning">get-to-know-me</Link>
+            <Link to="/about" className="btn btn-outline-warning m-1">get-to-know-me</Link>
           </div>
         </div>
       </div>

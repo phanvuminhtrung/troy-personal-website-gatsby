@@ -47,7 +47,7 @@ const BlogPage = () => {
 
           {/* Next-page Link */}
           <div className="text-end w-100 mt-5">
-            <Link to="/tool" className="btn btn-outline-warning">get-to-know-my-tool</Link>
+            <Link to="/tool" className="btn btn-outline-warning m-1">get-to-know-my-tool</Link>
           </div>
         </div>
       </div>

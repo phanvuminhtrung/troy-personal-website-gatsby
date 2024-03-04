@@ -22,7 +22,7 @@ const ToolPage = () => (
           
           {/* Next-page Link */}
           <div className="text-end w-100 mt-5">
-            <Link to="/" className="btn btn-outline-warning">back-home</Link>
+            <Link to="/" className="btn btn-outline-warning m-1">back-home</Link>
           </div>
       </div>
     </div>
