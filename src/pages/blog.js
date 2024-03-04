@@ -5,10 +5,10 @@ import Seo from "../components/seo"
 import "../components/blog.css"
 import { Fade } from 'react-awesome-reveal';
 
-// Query for blog posts
+// Query for blog posts (apply filter on node_locale to avoid duplicate content (i.e. content in different languages))
 export const query = graphql`
   {
-    allContentfulBlogPost {
+    allContentfulBlogPost(filter: {node_locale: {eq: "en-US"}}) {
       edges {
         node {
           title
