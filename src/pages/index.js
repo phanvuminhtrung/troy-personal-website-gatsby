@@ -15,7 +15,7 @@ const IndexPage = () => (
         <div className="home-page ml-2 mr-2">
           <h2>Hi, thank you for visiting my site.</h2>
           <p className="mt-5">Nothing really much here but you may get to know me a bit.</p>
-          <p className="mb-5">I also wrote stuff about tech.</p>
+          <p className="mb-5">I also write stuff about tech, tool, and dev-point-of-view.</p>
           
           {/* Quote*/}
           <Bounce>

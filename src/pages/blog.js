@@ -34,6 +34,8 @@ const BlogPage = () => {
       <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
         <div className="blog-page">
           <h2>Blog</h2>
+          <p className="mt-4 mb-1">Here you will find my thoughts on techs, tools, and personal thoughts.</p>
+          <p className="mb-4">My philosophy toward my blog is to simplify complex concepts for everyone's understanding.</p>
 
           {/* Map through each blog post and display a link with the title and publish date */}
           {data.allContentfulBlogPost.edges.map(({ node }) => (

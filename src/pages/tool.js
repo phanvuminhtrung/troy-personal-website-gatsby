@@ -13,10 +13,52 @@ const ToolPage = () => (
       <div className="tool-page">
           <div>
             <h2>Tool</h2>
+            {/* Dynamics 365 CRM/Power App tool */}
+            <h5>Dynamics 365 CRM/Power App tool</h5>
             <ul>
-              <li>Item 1: SQL 4 CDS</li>
-              <li>Item 2: Fiddler?</li>
-              <li>Item 3: Ngrok</li>
+              <li>XRM ToolBox</li>
+              <li>SQL 4 CDS</li>
+              <li>Access sec roles</li>
+              <li>EarlyBoundGenerator</li>
+              <li>FetchXml builder</li>
+              <li>Rest builder</li>
+              <li>Plugin Registration Tool</li>
+            </ul>
+            
+            {/* Developer debug tool */}
+            <h5>Developer debug tool</h5>
+            <ul>
+              <li>Fiddler</li>
+              <li>WcfClientTest</li>
+              <li>PRT</li>
+              <li>Ngrok</li>
+              <li>ChromeDev</li>
+            </ul>
+            
+            {/* AI tool */}
+            <h5>AI tool</h5>
+            <ul>
+              <li>Chatgpt</li>
+              <li>Co-pilot</li>
+              <li>Localhost AI</li>
+            </ul>
+            
+            {/* Personal built tool */}
+            <h5>Personal built tool</h5>
+            <ul>
+              <li>Make decisions by spinning wheel</li>
+              <li>To-do-list</li>
+              <li>Ter</li>
+              <li>Planning Poker</li>
+            </ul>
+
+            {/* Learning and develop knowledge */}
+            <h5>Learning and develop knowledge</h5>
+            <ul>
+              <li>MS learn</li>
+              <li>Udemy</li>
+              <li>PluralSight</li>
+              <li>Leetcode</li>
             </ul>
           </div>
           
