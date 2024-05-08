@@ -67,3 +67,21 @@ footer {
   color: #FCDC2A !important; 
 }
 
+/* This area control the dropdown button layout */
+.nav-sub-button {
+  font-weight: bold;
+  background: #333;
+  color: white;
+}
+.nav-sub-button:hover {
+  color: #436850 !important; /* This will change the color of your subnav items on hover */
+}
+.dropdown-menu {
+  --bs-dropdown-bg: #333 !important; 
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #FCDC2A; 
+}
+#nav-dropdown{
+  color: white !important;
+}

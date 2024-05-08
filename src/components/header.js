@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 // import boostrap + react-bootstrap
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Header = () => (
@@ -19,6 +19,11 @@ const Header = () => (
           <Nav>
             <Nav.Link as={Link} to="/" className="nav-button text-white me-4" activeClassName="active">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-button text-white me-4" activeClassName="active">ABOUT</Nav.Link>
+            <NavDropdown id="nav-dropdown" className="nav-button text-white me-4" title="PROJECTS">
+            <NavDropdown.Item as={Link} className="nav-sub-button" to="https://pointpokertroyphan.netlify.app/" target="_blank">POINT POKER</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className="nav-sub-button" to="https://wheelgamestroyphan.netlify.app/" target="_blank">WHEEL GAME</NavDropdown.Item>
+              <NavDropdown.Item as={Link} className="nav-sub-button" to="https://todolistjstroyphan.netlify.app/" target="_blank">TO DO LIST</NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/blog" className="nav-button text-white me-4" activeClassName="active">BLOG</Nav.Link>
             <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">TOOLS</Nav.Link>
           </Nav>
