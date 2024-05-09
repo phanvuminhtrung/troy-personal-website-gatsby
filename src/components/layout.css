@@ -83,5 +83,8 @@ footer {
   background-color: #FCDC2A; 
 }
 #nav-dropdown{
-  color: white !important;
+  color: white;
+}
+#nav-dropdown:hover {
+  color: #436850 !important; 
 }

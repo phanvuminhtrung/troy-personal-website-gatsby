@@ -17,20 +17,20 @@ const Header = () => (
         {/* Default nav */}
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-start">
           <Nav>
-            <Nav.Link as={Link} to="/" className="nav-button text-white me-4" activeClassName="active">HOME</Nav.Link>
-            <Nav.Link as={Link} to="/about" className="nav-button text-white me-4" activeClassName="active">ABOUT</Nav.Link>
-            <NavDropdown id="nav-dropdown" className="nav-button text-white me-4" title="TOOLS-I-BUILT">
-            <NavDropdown.Item as={Link} className="nav-sub-button" to="https://pointpokertroyphan.netlify.app/" target="_blank">POINT POKER</NavDropdown.Item>
+            <Nav.Link as={Link} to="/" className="nav-button text-white me-3" activeClassName="active">HOME</Nav.Link>
+            <Nav.Link as={Link} to="/about" className="nav-button text-white me-3" activeClassName="active">ABOUT</Nav.Link>
+            <NavDropdown id="nav-dropdown" className="nav-button text-white me-3" title="PROJECTS">
+              <NavDropdown.Item as={Link} className="nav-sub-button" to="https://pointpokertroyphan.netlify.app/" target="_blank">POINT POKER</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://wheelgamestroyphan.netlify.app/" target="_blank">WHEEL GAME</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://todolistjstroyphan.netlify.app/" target="_blank">TO DO LIST</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/blog" className="nav-button text-white me-4" activeClassName="active">BLOG</Nav.Link>
-            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">TOOLS-I-USED</Nav.Link>
+            <Nav.Link as={Link} to="/blog" className="nav-button text-white me-3" activeClassName="active">BLOG</Nav.Link>
+            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-3" activeClassName="active">TOOLS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* Social media nav links */}
         <Nav className="flex-row">
-          <Nav.Link className="custom-divider me-2 text-center">|</Nav.Link>
+          <Nav.Link className="custom-divider me-3 text-center">|</Nav.Link>
           <Nav.Link href="https://www.linkedin.com/in/vuphanit/" target="_blank" className="text-white me-2">
             <FaLinkedin />
           </Nav.Link>
