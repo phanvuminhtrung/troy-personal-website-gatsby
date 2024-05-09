@@ -19,13 +19,13 @@ const Header = () => (
           <Nav>
             <Nav.Link as={Link} to="/" className="nav-button text-white me-4" activeClassName="active">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-button text-white me-4" activeClassName="active">ABOUT</Nav.Link>
-            <NavDropdown id="nav-dropdown" className="nav-button text-white me-4" title="BUILT TOOLS">
+            <NavDropdown id="nav-dropdown" className="nav-button text-white me-4" title="TOOLS-I-BUILT">
             <NavDropdown.Item as={Link} className="nav-sub-button" to="https://pointpokertroyphan.netlify.app/" target="_blank">POINT POKER</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://wheelgamestroyphan.netlify.app/" target="_blank">WHEEL GAME</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://todolistjstroyphan.netlify.app/" target="_blank">TO DO LIST</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/blog" className="nav-button text-white me-4" activeClassName="active">BLOG</Nav.Link>
-            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">USING TOOLS</Nav.Link>
+            <Nav.Link as={Link} to="/tool" className="nav-button text-white me-2" activeClassName="active">TOOLS-I-USED</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* Social media nav links */}
