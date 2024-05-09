@@ -1,4 +1,3 @@
-# [Troyza Personal website]
 ## Overview
 Repo hosting my personal website.
 
