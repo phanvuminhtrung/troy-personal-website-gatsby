@@ -4,7 +4,7 @@
 Repo hosting my personal website.
 
 ## Access
-https://troyphan.com
+https://troyphan.com/
 
 ## Technologies
 The website built with [Jamstack](https://www.gatsbyjs.com/docs/glossary/jamstack/) philosophy and powered by these following technologies: 
