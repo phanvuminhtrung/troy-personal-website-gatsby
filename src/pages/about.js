@@ -20,12 +20,28 @@ const AboutPage = () => (
           <section id="about" className="mt-2 mb-2">
             <h4 className="text-decoration-underline">about-me:</h4>
             <p>I'm <span className="name-custom">Troy</span>, but you can call me <span className="name-custom">Troyza</span>!</p>
-            <p>I am a Junior Dynamics-365 Developer/Web Developer in Melbourne, Australia, passionate about web technologies.</p>
+            <p>I am a Dynamics-365 Developer/Web Developer in Melbourne, Australia, passionate about web technologies.</p>
             <p>I'm dedicated to leveraging Dynamics 365 and the Power Platform to create innovative CRM solutions that drive business impact. Eager to grow and contribute to team success, I'm open to connecting with professionals who share a similar passion for these technologies.</p>
-            <p>I admire and value people who actually build tools and contribute to community.</p>
           </section>
 
-            {/* Contact Section */}
+          {/* About Section */}
+          <section id="certificate" className="mt-2 mb-4">
+            <h4 className="text-decoration-underline">achievements:</h4>
+            <p>These are some of my recent certifications:</p>
+            <div className="badges-container">
+              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+                <StaticImage src="../images/powerplatform-developer-cert.png" alt="developer cert" className="badges" />
+              </a>
+              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+                <StaticImage src="../images/powerplatform-solutionarchitect-cert.png" alt="developer cert" className="badges" />
+              </a>
+              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+                <StaticImage src="../images/nexacu.png" alt="developer cert" className="badges" />
+              </a>
+            </div>
+          </section>
+
+          {/* Contact Section */}
           <section id="contact" className="mt-2 mb-2">
             <h4 className="text-decoration-underline">contact-me:</h4>
             <p>If you're interested in working together or just want to say hi, here's how you can reach out to me:</p>
@@ -39,7 +55,8 @@ const AboutPage = () => (
           {/* Next-page Link */}
           <div className="text-end w-100 mt-3">
             <Link href="/resume.pdf" download className="btn btn-outline-warning m-1">download-my-resume</Link>
-            <Link to="/blog" className="btn btn-outline-warning m-1">get-to-know-my-tech</Link>
+            <Link to="https://pointpokertroyphan.netlify.app/" target="_blank" className="btn btn-outline-warning m-1">visit-my-current-project</Link>
+            <Link to="/blog" className="btn btn-outline-warning m-1">read-my-blogs</Link>
           </div>
         </div>
       </div>

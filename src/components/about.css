@@ -39,6 +39,22 @@
   align-items: center;
 }
 
+.badges-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between badges */
+}
+
+.badges {
+  margin: 1.618% auto;
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 1.618%;
+  object-fit: contain;
+}
+
 .name-custom {
   color: #FCDC2A; /* Replace with the color you want on hover */
 }
