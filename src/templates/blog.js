@@ -51,7 +51,7 @@ const BlogPost = ({ data }) => {
           <a>{contentfulBlogPost.publishedDate}</a>
           <div className='mt-5 mb-5'>{renderedContent}</div>
 
-          {/* Next-page Link */}
+          {/* Back to Blogs buton */}
           <div className="mt-5 text-end w-100">
             <Link to="/blog" className="btn btn-outline-warning m-1">back-to-blogs</Link>
           </div>
