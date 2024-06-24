@@ -30,13 +30,16 @@ const AboutPage = () => (
             <p>These are some of my recent certifications:</p>
             <div className="badges-container">
               <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/powerplatform-developer-cert.png" alt="developer cert" className="badges" />
+                <StaticImage src="../images/powerplatform-developer-cert.png" alt="developer pl-400" className="badges" />
               </a>
               <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/powerplatform-solutionarchitect-cert.png" alt="developer cert" className="badges" />
+                <StaticImage src="../images/powerplatform-solutionarchitect-cert.png" alt="developer pl-600" className="badges" />
               </a>
               <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
-                <StaticImage src="../images/nexacu.png" alt="developer cert" className="badges" />
+                <StaticImage src="../images/buildedition.png" alt="build challenge" className="badges" />
+              </a>
+              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+                <StaticImage src="../images/nexacu.png" alt="nexacu" className="badges" />
               </a>
             </div>
           </section>
