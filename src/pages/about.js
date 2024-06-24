@@ -32,13 +32,13 @@ const AboutPage = () => (
               <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/powerplatform-developer-cert.png" alt="developer pl-400" className="badges" />
               </a>
-              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/powerplatform-solutionarchitect-cert.png" alt="developer pl-600" className="badges" />
-              </a>
+              </a> */}
               <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/buildedition.png" alt="build challenge" className="badges" />
               </a>
-              <a href="https://learn.microsoft.com/en-us/users/vuphanit/credentials/7d963bc1bdf46dfc?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" rel="noopener noreferrer">
+              <a href="/nexacu.pdf" target="_blank" rel="noopener noreferrer">
                 <StaticImage src="../images/nexacu.png" alt="nexacu" className="badges" />
               </a>
             </div>
@@ -57,7 +57,7 @@ const AboutPage = () => (
 
           {/* Next-page Link */}
           <div className="text-end w-100 mt-3">
-            <Link href="/resume.pdf" download className="btn btn-outline-warning m-1">download-my-resume</Link>
+            <Link href="/resume.pdf" target="_blank" className="btn btn-outline-warning m-1">download-my-resume</Link>
             <Link to="https://pointpokertroyphan.netlify.app/" target="_blank" className="btn btn-outline-warning m-1">visit-my-current-project</Link>
             <Link to="/blog" className="btn btn-outline-warning m-1">read-my-blogs</Link>
           </div>
