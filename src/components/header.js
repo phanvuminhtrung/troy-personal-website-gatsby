@@ -24,8 +24,9 @@ const Header = () => (
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://wheelgamestroyphan.netlify.app/" target="_blank">WHEEL GAME</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://todolistjstroyphan.netlify.app/" target="_blank">TO DO LIST</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/blog" className="nav-button text-white me-3" activeClassName="active">BLOG</Nav.Link>
+            <Nav.Link as={Link} to="/blog" className="nav-button text-white me-3" activeClassName="active">BLOGS</Nav.Link>
             <Nav.Link as={Link} to="/tool" className="nav-button text-white me-3" activeClassName="active">TOOLS</Nav.Link>
+            <Nav.Link as={Link} to="/hobby" className="nav-button text-white me-3" activeClassName="active">HOBBIES</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {/* Social media nav links */}
