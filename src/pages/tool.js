@@ -8,7 +8,7 @@ import { Fade } from 'react-awesome-reveal';
 const ToolPage = () => (
   <Layout>
     <Fade>
-    <Seo title="BucketList" />
+    <Seo title="Tool" />
     <div className="container h-100 d-flex flex-column justify-content-center align-items-center">
       <div className="tool-page">
           <div>
@@ -46,10 +46,9 @@ const ToolPage = () => (
             {/* Personal built tool */}
             <h5>Personal built tool</h5>
             <ul>
-              <li>Make decisions by spinning wheel</li>
+              <li>Point-poker</li>
+              <li>Spinning-wheel</li>
               <li>To-do-list</li>
-              <li>Ter</li>
-              <li>Planning Poker</li>
             </ul>
 
             {/* Learning and develop knowledge */}
@@ -64,7 +63,7 @@ const ToolPage = () => (
           
           {/* Next-page Link */}
           <div className="text-end w-100 mt-5">
-            <Link to="/" className="btn btn-outline-warning m-1">back-home</Link>
+            <Link to="/hobby" className="btn btn-outline-warning m-1">discover-my-hobbies</Link>
           </div>
       </div>
     </div>
