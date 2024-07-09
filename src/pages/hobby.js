@@ -15,9 +15,9 @@ const HobbyPage = () => (
             <h2>A bit about what i am into recently</h2>
             <h4 className="mt-4 mb-4">PIANO</h4>
 
-            <div className="d-inline-block w-100 mb-1">I always told myself I am one of the best in terms of self-taught, so why don't give music a try?</div>
-            <div className="d-inline-block w-100 mb-1">So I bought a piano and started learning from YouTube, and I found it very interesting.</div>
-            <div className="d-inline-block w-100 mb-1">Also, I am inspired by this guy who spent 2000 hours learning classical pieces.</div>
+            <div className="d-inline-block w-100 mb-1">I always told myself that being self-taught is one of my strong suits, so why not give music a try?</div>
+            <div className="d-inline-block w-100 mb-1">So I bought a piano and started learning from YouTube. Somehow, I found it very interesting.</div>
+            <div className="d-inline-block w-100 mb-1">Also, I am inspired by this guy who spent 2000 hours learning classical pieces which also become a milestone for me to get there.</div>
             <div class="video-container mt-4 mb-4">            
                 <iframe src="https://www.youtube.com/embed/wtk5PUH9gME" title="2.5 Years of Piano Progress / Adult Self-Taught (2000 Hours)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
