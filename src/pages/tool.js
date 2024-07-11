@@ -14,50 +14,69 @@ const ToolPage = () => (
           <div>
             <h2>Tool</h2>
             {/* Dynamics 365 CRM/Power App tool */}
-            <h5>Dynamics 365 CRM/Power App tool</h5>
+            <h5>Dynamics365/PowerApp/Dataverse tools</h5>
             <ul>
               <li>XRM ToolBox</li>
               <li>SQL 4 CDS</li>
-              <li>Access sec roles</li>
-              <li>EarlyBoundGenerator</li>
-              <li>FetchXml builder</li>
-              <li>Rest builder</li>
-              <li>Plugin Registration Tool</li>
+              <li>Access Sec Roles</li>
+              <li>User Security Roles</li>
+              <li>EarlyBoundGenerator V1/V2</li>
+              <li>FetchXML Builder</li>
+              <li>Dataverse REST Builder</li>
+              <li>Entity Relation Diagram Creator</li>
+              <li>Ribbon Workbench</li>
+            </ul>
+
+            {/* Developer management tool */}
+            <h5>Developer deployment tools</h5>
+            <ul>
+              <li>Azure DevOps</li>
+              <li>Portal Azure</li>
             </ul>
             
             {/* Developer debug tool */}
-            <h5>Developer debug tool</h5>
+            <h5>Developer debug tools</h5>
             <ul>
               <li>Fiddler</li>
+              <li>ChromeDev</li>
               <li>WcfClientTest</li>
               <li>PRT</li>
               <li>Ngrok</li>
-              <li>ChromeDev</li>
+              <li>Postman</li>
+            </ul>
+
+            {/* Developer management tool */}
+            <h5>Developer management tools</h5>
+            <ul>
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Miro</li>
+              <li>LastPass</li>
+              <li>ClickUp</li>
             </ul>
             
             {/* AI tool */}
-            <h5>AI tool</h5>
+            <h5>AI support tools</h5>
             <ul>
-              <li>Chatgpt</li>
+              <li><a href="https://chatgpt.com/g/g-s6uoiGq9U-reactjs-app-building" target="_blank">Chat-gpt Custom Bot</a></li>
               <li>Co-pilot</li>
-              <li>Localhost AI</li>
             </ul>
             
             {/* Personal built tool */}
-            <h5>Personal built tool</h5>
+            <h5>Personal built tools</h5>
             <ul>
               <li>Point-poker</li>
               <li>Spinning-wheel</li>
               <li>To-do-list</li>
             </ul>
 
-            {/* Learning and develop knowledge */}
-            <h5>Learning and develop knowledge</h5>
+            {/* Learning and develop */}
+            <h5>Learning and developing coding skills</h5>
             <ul>
-              <li>MS learn</li>
+              <li><a href="https://learn.microsoft.com/en-us/users/vuphanit/" target="_blank">MS learn</a></li>
+              <li><a href="https://www.hackerrank.com/" target="_blank">HackerRank</a></li>
               <li>Udemy</li>
               <li>PluralSight</li>
-              <li>Leetcode</li>
             </ul>
           </div>
           
