@@ -58,7 +58,7 @@ const ToolPage = () => (
             {/* AI tool */}
             <h5>AI support tools</h5>
             <ul>
-              <li><a href="https://chatgpt.com/g/g-s6uoiGq9U-reactjs-app-building" target="_blank">Chat-gpt Custom Bot</a></li>
+              <li><a href="https://chatgpt.com/g/g-s6uoiGq9U-full-stack-framework-assistant" target="_blank">Chat-gpt Custom Bot</a></li>
               <li>Co-pilot</li>
             </ul>
             
