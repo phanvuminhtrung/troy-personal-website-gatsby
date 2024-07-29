@@ -28,7 +28,11 @@ const HobbyPage = () => (
               <li>Past Lives</li>
               <li>Ki mino Toriko</li>
               <li>Comptine d’un autre été</li>
-            </ul>       
+            </ul>
+
+            <h4 className="mt-4 mb-4">GAME</h4>
+            <div className="d-inline-block w-100 mb-1">I never heard of any IT guys did not played any video games before. And i played too.</div>
+            <div className="d-inline-block w-100 mb-1">I mostly play FPS and sport games with my friends. Playing alone is too boring nowadays</div>   
           </div>
           
           {/* Next-page Link */}
