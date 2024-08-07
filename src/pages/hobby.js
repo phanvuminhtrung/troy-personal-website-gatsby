@@ -24,14 +24,14 @@ const HobbyPage = () => (
 
             <div className="d-inline-block w-100 mb-1">A few pieces i am trying to learn as beginner: </div>
             <ul>
+              <li>Comptine d’un autre été</li>
+              <li>Water Ripples</li>
               <li>River Flow In You</li>
               <li>Past Lives</li>
-              <li>Ki mino Toriko</li>
-              <li>Comptine d’un autre été</li>
             </ul>
 
             <h4 className="mt-4 mb-4">GAME</h4>
-            <div className="d-inline-block w-100 mb-1">I never heard of any IT guys did not played any video games before. And i played too.</div>
+            <div className="d-inline-block w-100 mb-1">I never heard of any tech guys did not played any video games before. And i played too.</div>
             <div className="d-inline-block w-100 mb-1">I mostly play FPS and sport games with my friends. Playing alone is too boring nowadays</div>   
           </div>
           

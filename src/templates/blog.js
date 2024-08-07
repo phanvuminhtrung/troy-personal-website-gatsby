@@ -9,33 +9,56 @@ import { Zoom } from 'react-awesome-reveal';
 
 // Query for blog post by slug
 export const query = graphql`
-    query BlogPostBySlug($slug: String) {
-        contentfulBlogPost(slug: { eq: $slug }) {
-          title
-          publishedDate
-          content {
-            raw
+   query BlogPostBySlug($slug: String) {
+  contentfulBlogPost(slug: { eq: $slug }) {
+    title
+    publishedDate
+    content {
+      raw
+      references {
+        ... on ContentfulComponentRichImage {
+          contentful_id
+          image {
+            file {
+              url
+            }
+            title
           }
         }
+      }
     }
+  }
+}
 `;
 
 // Bindings for blog post to the blog post page & display blog post content based on the slug
 const BlogPost = ({ data }) => {
   const { contentfulBlogPost } = data;
+  console.log(contentfulBlogPost.content.raw);
 
-  // Define custom render options for Rich Text
+  // Trying render image, video, hyperlink as node
   const options = {
     renderNode: {
-      [BLOCKS.EMBEDDED_ASSET]: node => {
-        const alt = node.data.target.fields.title['en-US'];
-        const url = node.data.target.fields.file['en-US'].url;
-        return <img alt={alt} src={url} />;
-      },
-      [INLINES.HYPERLINK]: (node, children) => {
-        return <a href={node.data.uri} target="_blank" rel="noopener noreferrer">{children}</a>;
-      },
-      // Add other custom render options as needed
+      // Handling embedded entry block (e.g., images)
+      ['embedded-entry-block']: (node) => {  
+        try {
+          console.log("Hyperlink");
+          const entryId = node.data.target.sys.id;
+          const entry = contentfulBlogPost.content.references.find(ref => ref.contentful_id === entryId);
+  
+          if (entry && entry.image && entry.image.file) {
+            return <img src={entry.image.file.url} alt={entry.image.title} />;
+          } else {
+            console.warn("Entry not found or missing image data:", entry);
+          }
+          return null; 
+
+        } catch (error) {
+          console.error("Error processing embedded entry block:", error);
+          return <div>Error loading embedded entry</div>;
+        }
+      }
+      // Handling hyperlink: need to test
     },
   };
 
@@ -50,7 +73,6 @@ const BlogPost = ({ data }) => {
           <h2>{contentfulBlogPost.title}</h2>
           <a>{contentfulBlogPost.publishedDate}</a>
           <div className='mt-5 mb-5'>{renderedContent}</div>
-
           {/* Back to Blogs buton */}
           <div className="mt-5 text-end w-100">
             <Link to="/blog" className="btn btn-outline-warning m-1">back-to-blogs</Link>

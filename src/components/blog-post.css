@@ -29,3 +29,13 @@
 .name-custom {
   color: #FCDC2A; 
 }
+
+/* Styling image as rich text component*/
+.blog-post img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  margin: 20px 0;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
