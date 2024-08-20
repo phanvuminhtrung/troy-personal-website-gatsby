@@ -13,3 +13,7 @@ The website built with [Jamstack](https://www.gatsbyjs.com/docs/glossary/jamstac
 - Boostrap5
 - GraphQL
 - Contentful
+
+## Working/Collaboration opportunities
+- Feel free to reach out or contact me with any website development opportunities
+- Keen to help you build your personal website with SEO optimize.
