@@ -20,6 +20,7 @@ const Header = () => (
             <Nav.Link as={Link} to="/" className="nav-button text-white me-3" activeClassName="active">HOME</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-button text-white me-3" activeClassName="active">ABOUT</Nav.Link>
             <NavDropdown id="nav-dropdown" className="nav-button text-white me-3" title="PROJECTS">
+              <NavDropdown.Item as={Link} className="nav-sub-button" to="https://troychatbot.netlify.app/" target="_blank">TROY'S CHATBOT</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://pointpokertroyphan.netlify.app/" target="_blank">POINT POKER</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://wheelgamestroyphan.netlify.app/" target="_blank">WHEEL GAME</NavDropdown.Item>
               <NavDropdown.Item as={Link} className="nav-sub-button" to="https://todolistjstroyphan.netlify.app/" target="_blank">TO DO LIST</NavDropdown.Item>
